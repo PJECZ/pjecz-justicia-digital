@@ -1,0 +1,11 @@
+.bashrc
+.env
+.gcloudignore
+.git
+.gitignore
+.vscode
+.DS_Store
+.~lock.*
+*.egg-info/
+*.log
+*.pyc

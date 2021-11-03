@@ -1,8 +1,13 @@
+.~lock.*
 .directory
 .bashrc
 .env
 .DS_Store
-.~lock.*
 .venv/
+*.log
+*.py[cod]
+*.sqlite3
+*.sqlite3-journal
+*.yaml
 __pycache__/
 venv/
