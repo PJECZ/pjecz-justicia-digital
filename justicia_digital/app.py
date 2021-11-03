@@ -25,6 +25,17 @@ def privacy_policy():
     )
 
 
+@app.route("/service_terms")
+def service_terms():
+    """Service terms page"""
+    return render_template(
+        "layouts/app.jinja2",
+        title="Condiciones del Servicio",
+        content_json=url_for("static", filename="json/service_terms.json"),
+    )
+
+
+
 @app.route("/video")
 def video():
     """Video page"""

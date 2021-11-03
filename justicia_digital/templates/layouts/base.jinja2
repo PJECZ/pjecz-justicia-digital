@@ -29,7 +29,8 @@
                 <h3 class="float-md-start mb-0">Poder Judicial del Estado de Coahuila de Zaragoza</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link {% if title == 'Bienvenido' %}active aria-current="page"{% endif %}" href="/">Inicio</a>
-                    <a class="nav-link {% if title == 'Política de Privacidad' %}active aria-current="page"{% endif %}" href="{{ url_for('privacy_policy') }}">Términos</a>
+                    <a class="nav-link {% if title == 'Política de Privacidad' %}active aria-current="page"{% endif %}" href="{{ url_for('privacy_policy') }}">Políticas de Privacidad</a>
+                    <a class="nav-link {% if title == 'Condiciones del Servicio' %}active aria-current="page"{% endif %}" href="{{ url_for('service_terms') }}">Condiciones del Servicio</a>
                     <a class="nav-link {% if title == 'Video sobre Justicia Digital' %}active aria-current="page"{% endif %}" href="{{ url_for('video') }}">Video</a>
                     <a class="nav-link {% if title == 'Contacto' %}active aria-current="page"{% endif %}" href="{{ url_for('contact') }}">Contacto</a>
                 </nav>
