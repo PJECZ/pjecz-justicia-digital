@@ -28,9 +28,10 @@
             <div>
                 <h3 class="float-md-start mb-0">Poder Judicial del Estado de Coahuila de Zaragoza</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Terminos</a>
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    <a class="nav-link" href="{{ url_for('privacy_policy') }}">Términos</a>
+                    <a class="nav-link" href="{{ url_for('video') }}">Video</a>
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contacto</a>
                 </nav>
             </div>
         </header>
@@ -40,7 +41,7 @@
         </main>
 
         <footer class="mt-auto text-white-50">
-            <p>Visite el sitio web <a href="https://www.pjecz.gob.mx/" class="text-white">www.pjecz.gob.mx</a>.</p>
+            <p>Visite el sitio web <a class="text-white" href="https://www.pjecz.gob.mx/" target="_blank">www.pjecz.gob.mx</a>.</p>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"
