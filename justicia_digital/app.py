@@ -1,7 +1,7 @@
 """
 Flask App
 """
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def start():
     """Start page"""
     return render_template(
         "layouts/start.jinja2",
-        title="justiciadigital.gob.mx",
+        title="Bienvenido",
     )
 
 
@@ -21,7 +21,7 @@ def privacy_policy():
     return render_template(
         "layouts/app.jinja2",
         title="Política de Privacidad",
-        content="Pendiente escribir la Política de Privacidad...",
+        content_json=url_for("static", filename="json/privacy_policy.json"),
     )
 
 
@@ -30,7 +30,7 @@ def video():
     """Video page"""
     return render_template(
         "layouts/app.jinja2",
-        title="Video sobre uso de los datos",
+        title="Video sobre Justicia Digital",
         content="Video en YouTube en el que expliques cómo usarás los datos del usuario de Google que obtienes de los permisos.",
     )
 
@@ -43,6 +43,12 @@ def contact():
         title="Contacto",
         content="Pendiente datos de contacto...",
     )
+
+
+@app.route("/favicon.ico")
+def favicon():
+    """Favicon"""
+    return redirect(url_for("static", filename="favicon.ico"))
 
 
 @app.errorhandler(404)
