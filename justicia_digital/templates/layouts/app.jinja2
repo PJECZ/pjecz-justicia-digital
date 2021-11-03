@@ -2,7 +2,25 @@
 
 {% block main %}
     <div class="container">
-        <h1>{{ title }}</h1>
+        <h1 class="mb-3">{{ title }}</h1>
+    {% if content_json %}
+        <div id="large_content"></div>
+    {% else %}
         <p>{{ content }}</p>
+    {% endif %}
     </div>
+{% endblock %}
+
+{% block custom_javascript %}
+    {% if content_json %}
+        <script>
+            /* load large content */
+            let template = {'<>':'p','text':'${text}'};
+            $(document).ready(function() {
+                $.getJSON("{{ content_json }}", function(data) {
+                    $("#large_content").json2html(data.content, template);
+                });
+            });
+        </script>
+    {% endif %}
 {% endblock %}
