@@ -1,12 +1,14 @@
 {% extends "layouts/base.jinja2" %}
 
+{% block title %}{{ title }}{% endblock %}
+
 {% block main %}
     <div class="container">
         <h1 class="mb-3 pdg-top">{{ title }}</h1>
     {% if content_json %}
         <div id="large_content"></div>
     {% else %}
-        <p>{{ content }}</p>
+        {{ content }}
     {% endif %}
     </div>
 {% endblock %}
@@ -14,8 +16,7 @@
 {% block custom_javascript %}
     {% if content_json %}
         <script>
-            /* load large content */
-            let template = {'<>':'p','text':'${text}'};
+            let template = {'<>':'p','text':'${text}' };
             $(document).ready(function() {
                 $.getJSON("{{ content_json }}", function(data) {
                     $("#large_content").json2html(data.content, template);

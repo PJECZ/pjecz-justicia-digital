@@ -11,7 +11,9 @@ def start():
     """Start page"""
     return render_template(
         "layouts/start.jinja2",
-        title="Bienvenido",
+        title="Justicia Digital",
+        message="Bienvenido a la nueva generación de sistemas de información.",
+        video="#",
     )
 
 
@@ -35,24 +37,21 @@ def service_terms():
     )
 
 
-
-@app.route("/video")
-def video():
-    """Video page"""
-    return render_template(
-        "layouts/app.jinja2",
-        title="Video sobre Justicia Digital",
-        content="Video en YouTube en el que expliques cómo usarás los datos del usuario de Google que obtienes de los permisos.",
-    )
-
-
 @app.route("/contact")
 def contact():
     """Contact page"""
     return render_template(
         "layouts/app.jinja2",
         title="Contacto",
-        content="Pendiente datos de contacto...",
+        content="""
+            <p class="lead">
+                <a href="mailto:informatica@pjecz.gob.mx">informatica@pjecz.gob.mx</a>
+            </p>
+            <p class="lead">
+                Blvd. Francisco Coss #945. Zona Centro. Saltillo, Coahuila de Zaragoza, México.<br>
+                Teléfono 844 194 5100
+            </p>
+        """,
     )
 
 
@@ -68,7 +67,7 @@ def page_not_found(error):
     return (
         render_template(
             "layouts/error.jinja2",
-            title="404",
+            title="ERROR 404",
             description="PÁGINA NO ENCONTRADA",
         ),
         404,
