@@ -29,10 +29,10 @@
             <div>
                 <h3 class="float-md-start mb-0"><img src="{{ url_for('static', filename='images/logotipo.png') }}" class="logo-png"></h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link {% if title == 'Justicia Digital' %}active aria-current="page"{% endif %}" href="/">Inicio</a>
-                    <a class="nav-link {% if title == 'Política de Privacidad' %}active aria-current="page"{% endif %}" href="{{ url_for('privacy_policy') }}">Políticas de Privacidad</a>
-                    <a class="nav-link {% if title == 'Condiciones del Servicio' %}active aria-current="page"{% endif %}" href="{{ url_for('service_terms') }}">Condiciones del Servicio</a>
-                    <a class="nav-link {% if title == 'Contacto' %}active aria-current="page"{% endif %}" href="{{ url_for('contact') }}">Contacto</a>
+                    <a {% if title == 'Justicia Digital' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/">Inicio</a>
+                    <a {% if title == 'Política de Privacidad' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="{{ url_for('privacy_policy') }}">Políticas de Privacidad</a>
+                    <a {% if title == 'Condiciones del Servicio' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="{{ url_for('service_terms') }}">Condiciones del Servicio</a>
+                    <a {% if title == 'Contacto' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="{{ url_for('contact') }}">Contacto</a>
                 </nav>
             </div>
         </header>
