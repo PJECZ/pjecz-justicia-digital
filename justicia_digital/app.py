@@ -45,7 +45,7 @@ def contact():
         title="Contacto",
         content="""
             <p class="lead">
-                <a href="mailto:informatica@pjecz.gob.mx">informatica@pjecz.gob.mx</a>
+                <a href="mailto:justicia.digital@pjecz.gob.mx">justicia.digital@pjecz.gob.mx</a>
             </p>
             <p class="lead">
                 Blvd. Francisco Coss #945. Zona Centro. Saltillo, Coahuila de Zaragoza, México.<br>
