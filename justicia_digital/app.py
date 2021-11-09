@@ -12,7 +12,7 @@ def start():
     return render_template(
         "layouts/start.jinja2",
         title="Justicia Digital",
-        message="Bienvenido a la nueva generación de sistemas de información.",
+        message="Bienvenido a la nueva generación de sistemas de información del PJECZ.",
         video="https://www.youtube.com/embed/C0DPdy98e4c",
     )
 
