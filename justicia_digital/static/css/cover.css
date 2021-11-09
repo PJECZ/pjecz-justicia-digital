@@ -12,6 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 /* Header */
 .nav-masthead .nav-link {
     padding: .25rem 0;
@@ -32,6 +33,13 @@ body {
     color: #fff;
     border-bottom-color: #fff;
 }
+.navbar-toggler-icon {
+    color:ivory !important;
+    border-color: rgb(75, 75, 75) !important;
+}
+.navbar-toggler {
+    border-color: rgb(75, 75, 75) !important;
+}
 
 /* Custom default button */
 .btn-secondary,
@@ -51,16 +59,17 @@ body {
     vertical-align: middle;
     width: 340px;
 }
-
 .pdg-top {
    margin-top: 30px;
    padding-top: 10px;
 }
 
-.navbar-toggler-icon {
-    color:ivory !important;
-    border-color: rgb(75, 75, 75) !important;
-}
-.navbar-toggler {
-    border-color: rgb(75, 75, 75) !important;
-}
+/* Video */
+.video-container {
+    position: relative; /* keeps the aspect ratio */
+    padding-bottom: 56.25%; /* fine tunes the video positioning */
+    padding-top: 60px; overflow: hidden;
+ }
+.video-container iframe,
+.video-container object,
+.video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
