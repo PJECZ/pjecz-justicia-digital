@@ -13,7 +13,7 @@ def start():
         "layouts/start.jinja2",
         title="Justicia Digital",
         message="Bienvenido a la nueva generación de sistemas de información del PJECZ.",
-        video="https://www.youtube.com/embed/K0uxjdcZWyk",
+        video="https://www.youtube.com/embed/H8cT17l38Eo",
     )
 
 
