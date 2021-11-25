@@ -1,11 +1,14 @@
 .bashrc
 .env
 .gcloudignore
-.git
 .gitignore
-.vscode
 .DS_Store
 .~lock.*
 *.egg-info/
 *.log
 *.pyc
+/.git
+/.github
+/.venv
+/.vscode
+/venv

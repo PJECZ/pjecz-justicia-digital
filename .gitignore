@@ -10,3 +10,4 @@
 *.sqlite3-journal
 __pycache__/
 venv/
+app.yaml

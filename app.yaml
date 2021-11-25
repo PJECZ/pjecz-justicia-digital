@@ -1,5 +1,5 @@
 runtime: python38
-service_account: github-deploy-app-engine@pjecz-268521.iam.gserviceaccount.com
+service_account: github-deploy-app-engine@justicia-digital-gob-mx.iam.gserviceaccount.com
 env_variables:
   FLASK_APP: justicia_digital/app.py
   FLASK_DEBUG: 0
