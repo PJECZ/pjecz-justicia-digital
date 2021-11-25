@@ -12,7 +12,7 @@ def start():
     return render_template(
         "layouts/start.jinja2",
         title="Justicia Digital",
-        message="Bienvenido a la nueva generación de sistemas de información del PJECZ.",
+        message="Bienvenido a los sistemas de información del Poder Judicial del Estado de Coahuila de Zaragoza.",
         video="https://www.youtube.com/embed/LRG-0qOdQSA",
     )
 
