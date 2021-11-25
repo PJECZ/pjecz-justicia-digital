@@ -16,4 +16,4 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-appengine@main
         with:
-          credentials: ${{ secrets.GCP_JUSTICIA_DIGITAL_GOB_MX_KEY }}
+          credentials: ${{ secrets.GCP_SA_KEY }}
